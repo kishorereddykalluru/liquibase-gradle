@@ -1,0 +1,7 @@
+databaseChangeLog:
+  - include:
+      file: "scripts/db/create-user.sql"
+      relativeToChangeLogFile: true
+#  - include:
+#      file: "scripts/db/create-address.sql"
+#      relativeToChangeLogFile: true

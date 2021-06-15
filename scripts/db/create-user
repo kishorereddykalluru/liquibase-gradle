@@ -1,0 +1,10 @@
+-- liquibase formatted sql
+
+-- changeset author: kallki id: 1
+CREATE TABLE user_details (
+    user_id INT(10) NOT NULL,
+    user_name VARCHAR(255),
+    PRIMARY KEY ('user_id')
+)
+
+--rollback DROP TABLE IF EXISTS user_details

@@ -1,0 +1,38 @@
+databaseChangeLog:
+  -  preConditions:
+  -  runningAs:
+       username:  kishorereddykalluru
+
+  -  changeSet:
+       id:  1
+       author:  kalluki
+       changes:
+         -  createTable:
+              tableName:  employees
+              columns:
+                -  column:
+                     name:  id
+                     type:  int
+                     autoIncrement:  true
+                     constraints:
+                       primaryKey:  true
+                       nullable:  false
+                -  column:
+                     name:  firstname
+                     type:  varchar(50)
+                     constraints:
+                       nullable: false
+                - column:
+                    name: lastname
+                    type: varchar(50)
+                    constraints:
+                      nullable: false
+                - column:
+                    name: email
+                    type: varchar(255)
+                    constraints:
+                      nullable: false
+                      unique: true
+                - column:
+                    name: address
+                    type: varchar(255)
